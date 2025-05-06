@@ -32,7 +32,7 @@ def bad_request(error):
     app.logger.warning(message)
     return (
         jsonify(
-            status=status.HTTP_400_BAD_REQUEST, 
+            status=status.HTTP_400_BAD_REQUEST,
             error="Bad Request", 
             message=message
         ),
@@ -47,8 +47,8 @@ def not_found(error):
     app.logger.warning(message)
     return (
         jsonify(
-            status=status.HTTP_404_NOT_FOUND, 
-            error="Not Found", 
+            status=status.HTTP_404_NOT_FOUND,
+            error="Not Found",
             message=message
             ),
         status.HTTP_404_NOT_FOUND,
