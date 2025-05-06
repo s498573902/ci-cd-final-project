@@ -33,7 +33,7 @@ def bad_request(error):
     return (
         jsonify(
             status=status.HTTP_400_BAD_REQUEST,
-            error="Bad Request", 
+            error="Bad Request",
             message=message
         ),
         status.HTTP_400_BAD_REQUEST,
